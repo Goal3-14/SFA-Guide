@@ -1,0 +1,36 @@
+name: Correction
+description: Report an error, outdated info, or broken link on an existing page.
+title: "[Correction] "
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If the fix is small, the fastest path is to click the &#9998; pencil icon at the top-right of the page on the live site and propose the change directly &mdash; no issue needed.
+  - type: input
+    id: page
+    attributes:
+      label: Which page?
+      description: URL or path under docs/ (e.g. docs/locations/dungeon-2/index.md).
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong?
+      description: Quote the incorrect text or describe the broken behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: What should it say instead?
+    validations:
+      required: false
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Video link with timestamp, screenshot, or run reference that shows the correct info.
+    validations:
+      required: false

@@ -1,0 +1,50 @@
+name: Guide request
+description: Request a new guide page, walkthrough section, or expanded coverage.
+title: "[Guide] "
+labels: ["guide-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping shape the guide. The more specific you are, the easier it is for someone to pick this up.
+  - type: input
+    id: topic
+    attributes:
+      label: What should the guide cover?
+      placeholder: "e.g. Dark Ice Mines route for Any%"
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Which category does this apply to?
+      multiple: true
+      options:
+        - Any%
+        - 100%
+        - Glitchless
+        - All / category-agnostic
+        - Other (explain below)
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Why is this needed?
+      description: What's currently missing, wrong, or unclear? Link to the closest existing page if there is one.
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Video links, run timestamps, forum threads, Discord messages &mdash; anything that would help the writer.
+    validations:
+      required: false
+  - type: checkboxes
+    id: willing
+    attributes:
+      label: Can you help write it?
+      options:
+        - label: I'd be willing to draft this myself if pointed at the right file.
+        - label: I can review a draft from someone else.

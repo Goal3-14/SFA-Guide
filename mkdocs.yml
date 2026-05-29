@@ -1,0 +1,135 @@
+site_name: Star Fox Adventures Speedrun Guide
+site_description: Community-maintained speedrun guide and resource site for Star Fox Adventures (GameCube).
+site_url: https://goal3-14.github.io/SFA-Guide/
+site_author: Goal3-14
+
+repo_name: Goal3-14/SFA-Guide
+repo_url: https://github.com/Goal3-14/SFA-Guide
+edit_uri: edit/main/docs/
+
+copyright: Content licensed CC BY-SA 4.0 &mdash; site code MIT
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant       # SPA-style page loads; keeps search index warm
+    - navigation.tracking      # URL updates as you scroll through anchors
+    - navigation.sections      # top-level sections rendered as groups
+    - navigation.indexes       # section index pages (index.md inside a folder)
+    - navigation.top           # back-to-top button
+    - search.suggest           # autocomplete in the search box
+    - search.highlight         # highlight matches on the destination page
+    - search.share             # shareable search URLs
+    - content.action.edit      # "edit this page" pencil
+    - content.code.copy        # copy button on code blocks
+    - toc.follow               # right-hand TOC follows scroll
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+
+plugins:
+  - search
+  - tags
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+  - git-revision-date-localized:
+      type: timeago
+      fallback_to_build_date: true
+      enable_creation_date: false
+      strict: false   # Don't fail --strict builds when a file is uncommitted; just fall back to build date.
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.keys
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Goal3-14/SFA-Guide
+    # TODO: add speedrun.com and Discord links once decided
+    # - icon: fontawesome/brands/discord
+    #   link: https://discord.gg/REPLACE_ME
+
+# Explicit nav for control. Add new pages here when you create them.
+# Structure mirrors the three audience tiers: intro/beginner -> core reference -> bonus -> contributing.
+nav:
+  - Home: index.md
+
+  # ---- Intro / Beginner ----
+  - Intro: intro/index.md
+  - General Info: general-info/index.md
+  - Categories:
+      - Overview: categories/index.md
+      - Any%: categories/any-percent.md
+      - 100%: categories/hundred-percent.md
+      - Glitchless: categories/glitchless.md
+
+  # ---- Core reference ----
+  - Tech:
+      - Overview: tech/index.md
+      # TODO: add one entry per tech file as they are written
+  - Glitches:
+      - Overview: glitches/index.md
+      - "Out of Bounds (template)": glitches/out-of-bounds.md
+      # TODO: add one entry per glitch
+  - Skips:
+      - Overview: skips/index.md
+      - "Example Skip (template)": skips/example-skip.md
+      # TODO: add one entry per skip
+  - Locations:
+      - Overview: locations/index.md
+      - "Overworld (template)": locations/overworld.md
+      # TODO: add one entry per location
+
+  # ---- Bonus ----
+  - Tools: tools/index.md
+  - Glitch Hunting: glitch-hunting/index.md
+  - Cool Stuff: cool-stuff/index.md
+
+  # ---- Meta ----
+  - Tags: tags.md
+  - Contributing: contributing.md

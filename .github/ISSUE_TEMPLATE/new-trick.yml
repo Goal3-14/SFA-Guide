@@ -1,0 +1,77 @@
+name: New trick or glitch
+description: Document a newly discovered trick, glitch, or skip that should be added to the guide.
+title: "[Trick] "
+labels: ["new-trick"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        New tech is the highest-value content. Please attach a video and setup as precisely as you can &mdash; the more reproducible it is from this issue alone, the faster it gets written up.
+  - type: input
+    id: name
+    attributes:
+      label: Trick/glitch name
+      placeholder: "Community name if it has one, otherwise a short descriptive name."
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Where in the game does it occur?
+      placeholder: "Area, room, or cutscene."
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Relevant categories
+      multiple: true
+      options:
+        - Any%
+        - 100%
+        - Glitchless (this trick is BANNED in glitchless)
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: setup
+    attributes:
+      label: Setup
+      description: Step-by-step. Be specific about position, camera, inputs, and timing.
+    validations:
+      required: true
+  - type: textarea
+    id: video
+    attributes:
+      label: Video (required)
+      description: YouTube link with timestamp. Console or emulator note welcome.
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Confirmed on
+      multiple: true
+      options:
+        - GameCube (NTSC-U)
+        - GameCube (NTSC-J)
+        - GameCube (PAL)
+        - Wii backward-compat
+        - Dolphin
+        - Unknown / haven't tested across platforms
+    validations:
+      required: true
+  - type: textarea
+    id: timesave
+    attributes:
+      label: Estimated time save
+      description: Compared to what? Rough range is fine if not yet measured.
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Other notes
+      description: Failure modes, risk level, RNG involvement, version differences.
+    validations:
+      required: false
