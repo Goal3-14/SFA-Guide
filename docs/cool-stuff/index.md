@@ -1,26 +1,12 @@
 # Cool Stuff
 
-Community-made content worth watching even if you are not running. Mostly video links &mdash; this section is curated, not exhaustive.
+Community-made content worth watching even if you're not running.
 
-## Videos
+## Pages
 
-<!-- TODO: each entry is one line: link + one-sentence description. Keep it tight. -->
+- [WR History](wr-history.md) &mdash; Any% World Record history, including a Japanese-narrated version.
+- [TAS runs](tas-runs.md) &mdash; reference TAS for Any% No K5E.
 
-- <!-- TODO: [Example title](https://youtu.be/REPLACE_ME) &mdash; one-sentence why-it-is-cool -->
+## Submitting your own
 
-## Memorable runs
-
-<!-- TODO: notable WR runs, first-ever runs of new categories, races. -->
-
-## Creators to follow
-
-<!-- TODO: Twitch / YouTube channels of active runners. -->
-
-## Community
-
-The full community-links list lives in [Community resources](../tools/index.md). <!-- TODO: if it grows, split it back into its own page. -->
-
----
-
-!!! tip "Submitting your own?"
-    Open a [PR](https://github.com/Goal3-14/SFA-Guide/edit/main/docs/cool-stuff/index.md) or a [guide request issue](https://github.com/Goal3-14/SFA-Guide/issues/new?template=guide-request.yml). Submitting your own runs is fine and encouraged.
+Open a [PR](https://github.com/Goal3-14/SFA-Guide/edit/main/docs/cool-stuff/index.md) or a [guide request issue](https://github.com/Goal3-14/SFA-Guide/issues/new?template=guide-request.yml). Submitting your own runs is encouraged.

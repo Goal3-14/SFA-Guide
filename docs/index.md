@@ -1,9 +1,14 @@
 ---
 hide:
   - navigation
+  - toc
 ---
 
-# Star Fox Adventures Speedrun Guide
+<p style="text-align: center; margin: 2rem 0;">
+  <img src="Star_Fox_Adventures.png" alt="Star Fox Adventures" style="max-width: 480px; width: 80%; height: auto;">
+</p>
+
+# Speedrun Guide
 
 Welcome. This is the community-maintained reference for speedrunning **Star Fox Adventures** on the GameCube. Everything here is editable &mdash; click the &#9998; pencil at the top-right of any page to suggest a change.
 

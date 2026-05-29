@@ -1,26 +1,15 @@
 # Locations
 
-General info on each area &mdash; what happens there during the run, what skips apply, and what you should know when arriving fresh.
+This section is intentionally minimal for now &mdash; the reference content from the speedrun.com guide is structured around [Categories](../categories/index.md), [Glitches](../glitches/index.md), and [Skips](../skips/index.md), not per-area pages.
 
-## How this section is organized
+## When to add a location page
 
-- **One `.md` per location**, flat. No subfolders &mdash; the file name *is* the location name (e.g. `dark-ice-mines.md`).
-- Images go in [`docs/locations/images/`](images/) with the location name as a prefix: `dark-ice-mines-room-3.png`.
-- Skip-specific writeups live under [Skips](../skips/index.md). Each location page links to skips that happen there; it does not re-document them.
+Per-area pages make sense once the guide grows beyond what the routing structure already covers &mdash; for example a deep dive on **Snowhorn Wastes** as a whole, or an overview of **Cape Claw** with all its skips listed in one place.
 
-## Areas
+For the location codes used throughout the guide (TTH, DIM, CRF, etc.), see [Terminology](../general-info/terminology.md).
 
-<!-- TODO: list every area as a flat link. Add as you migrate content. -->
+## Structure when you add one
 
-- [Overworld](overworld.md) &mdash; _example file showing the template_
-- <!-- e.g. - [Krazoa Palace](krazoa-palace.md) -->
-- <!-- e.g. - [Dark Ice Mines](dark-ice-mines.md) -->
-- <!-- TODO -->
-
-## Adding a new location
-
-1. Copy [`overworld.md`](overworld.md) as a template.
-2. Rename to the in-game name (lowercase, hyphens). Use the official name where there is one.
-3. Fill in the sections.
-4. Link the [Skips](../skips/index.md) that happen in this area.
-5. Add it to the list above and to `mkdocs.yml` `nav:`.
+- One `.md` per location, flat (e.g. `dark-ice-mines.md`). No subfolders.
+- Images go in [`docs/locations/images/`](images/) prefixed with the location name.
+- The page should list the [Skips](../skips/index.md) that happen in that area &mdash; it doesn't re-document them.

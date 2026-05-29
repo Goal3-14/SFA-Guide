@@ -6,37 +6,26 @@ tags:
 
 # General Info
 
-Everything a first-time learner needs before picking a category. If you have run other GameCube games before, skim. If this is your first speedrun, read top to bottom.
+The reference layer that every category sits on top of. If you're new, read this section top to bottom before picking a category.
 
-## Game versions
+## Pages in this section
 
-<!-- TODO: NTSC-U / NTSC-J / PAL differences, which the leaderboard uses, version-specific timing notes. -->
-
-## Hardware vs emulator
-
-<!-- TODO: console requirements, Dolphin version + settings recommendations, capture suggestions. -->
-
-## Timing
-
-<!-- TODO: RTA vs IGT, where the timer starts and stops, load-removal policy. -->
-
-## How runs are structured
-
-<!-- TODO: high-level shape of a run &mdash; intro cutscenes, main areas, endgame. Helps a new runner build a mental map before diving into routes. -->
+- [Emulator settings](emulator-settings.md) &mdash; required Dolphin tweaks to avoid crashes.
+- [Terminology](terminology.md) &mdash; location codes, skip acronyms, staff upgrade list. Bookmark this one.
+- [Routing dependencies](routing-dependencies.md) &mdash; the gate-by-gate logic of what unlocks what. Explains why most routes are shaped the way they are.
+- [Versions](versions.md) &mdash; v1.0 vs v1.1, regions, language differences and what they're worth in time.
+- [Fuel cells](fuel-cells.md) &mdash; how many you need where, with a per-area breakdown.
+- [Chapter select](chapter-select.md) &mdash; the input code and what each slot loads.
 
 ## How to read a route page
 
-Each [Location](../locations/index.md) and [Category](../categories/index.md) page follows the same shape:
+[Category](../categories/index.md) pages are narrative route guides. They walk you through the run in order and link to:
 
-1. **Entry** &mdash; where you come from and what state you should be in.
-2. **Route** &mdash; the actual sequence of inputs/movement.
-3. **Skips** &mdash; optional or category-specific shortcuts, with links to their dedicated [Skip](../skips/index.md) pages.
-4. **Exit** &mdash; the state the next page assumes.
+- [Glitches](../glitches/index.md) &mdash; mechanics of each glitch.
+- [Skips](../skips/index.md) &mdash; specific applications at specific points in the run.
+
+A skip can belong to multiple categories &mdash; the page is tagged with each one it appears in.
 
 ## Submitting runs
 
-- Leaderboards: <https://www.speedrun.com/sfa>
-- Rules vary by category &mdash; always read the rules tab on each category page before submitting.
-
-!!! note "Page status"
-    Placeholder.
+Leaderboards: <https://www.speedrun.com/sfa>. Always read the rules tab on each category before submitting.

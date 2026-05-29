@@ -5,30 +5,15 @@ tags:
 
 # General Tech
 
-Reusable movement and control techniques that apply across the whole game. One topic per page &mdash; add a new `.md` file in this folder and link it from the list below.
+Reusable movement and control techniques. These are not glitches and are not banned in any category &mdash; they're general gameplay tech that shows up across the whole game.
 
-<!-- TODO: each item is one md file in this folder. Create as needed. -->
+## Pages
 
-## Movement
+- [Neutral rolls / ladder skips](neutral-rolls.md) &mdash; skip climbing down ladders and vines.
+- [Running vs rolling](running-vs-rolling.md) &mdash; when to run, when to roll, plus the TAS-only Roll Cancel technique.
+- [Flight lag](flight-lag.md) &mdash; how to dodge the post-area-select lag spike.
 
-- `rolling.md` &mdash; <!-- TODO -->
-- `jumping.md` &mdash; <!-- TODO -->
-- `camera.md` &mdash; <!-- TODO -->
+## See also
 
-## Combat / staff
-
-- `staff-basics.md` &mdash; <!-- TODO -->
-
-## Menu / inventory
-
-- `menu-buffering.md` &mdash; <!-- TODO -->
-
----
-
-**General Tech vs Glitches vs Skips:**
-
-- **[General Tech](index.md)** &mdash; intended movement / control that every run uses.
-- **[Glitches](../glitches/index.md)** &mdash; unintended engine behavior. The "what and why".
-- **[Skips](../skips/index.md)** &mdash; concrete, applied uses of glitches (and tech) at specific points in the run. The "where and when".
-
-If you don't know which bucket something belongs in, ask in your PR.
+- [Glitches](../glitches/index.md) &mdash; unintended engine behavior. The *what and why*.
+- [Skips](../skips/index.md) &mdash; concrete applied uses of glitches and tech at specific points in the run. The *where and when*.

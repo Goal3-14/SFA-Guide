@@ -1,27 +1,24 @@
 # Glitches
 
-The **mechanics** of every known glitch &mdash; what it is, how to trigger it, and why it works at the engine level. Concrete applications (which skip uses which glitch, where in the run) live under [Skips](../skips/index.md).
+The **mechanics** of every glitch &mdash; what it is, how to trigger it, and why it works. Concrete applications (which skip uses which glitch at which point in the run) live under [Skips](../skips/index.md).
 
-## How this section is organized
+## Pages
 
-- **One `.md` file per glitch** in this folder. No subfolders.
-- Images for a glitch go in [`docs/glitches/images/`](images/) using the glitch's name as a prefix: `out-of-bounds-wall-clip-alignment.png`.
-- Deep mechanical analysis (memory addresses, debug-menu traces, frame data tables) belongs under [Glitch Hunting](../glitch-hunting/index.md), not here. This section should stay readable for a runner trying to learn the trick.
-
-## Known glitches
-
-<!-- TODO: link a page per glitch as they are written. See out-of-bounds.md for the template shape. -->
-
-- [Out of Bounds](out-of-bounds.md) &mdash; _example file showing the page template_
-- <!-- e.g. - [RBA](rba.md) — if applicable to SFA -->
-- <!-- e.g. - [Cutscene Storage](cutscene-storage.md) -->
-- <!-- TODO: list real SFA glitches here -->
+| Glitch | What it does |
+|---|---|
+| [Air Swim](air-swim.md) | Lets Fox swim in the air after going off the TTH waterfall at the right spot. Foundation for [CCE](../skips/cce.md), [DIME](../skips/dime.md), and most major glitched routes. |
+| [Ball Entanglement](ball-entanglement.md) | Hotkey ball + frame-perfect pickup A/Y. Enables [FGL](../skips/fgl.md) and [Ball Hover](../skips/ball-hover.md). |
+| [Bike Flag Glitch](bike-flag-glitch.md) | Lets you drive the IM bike freely outside the race. |
+| [Camera Lock](camera-lock.md) | Freeze the camera; many triggers fire on camera position, not Fox. Enables [Beacon Skip](../skips/beacon-skip.md), [QE Cam Lock](../skips/qe-cam-lock.md), [GQE](../skips/gqe.md), [OFP Cam Lock](../skips/ofp-cam-lock.md). |
+| [Damage Clip](damage-clip.md) | v1.0-only barrel collision lets you push yourself out of bounds in IM. Required for [Any%](../categories/any-percent.md). |
+| [ESW Checkpoints](esw-checkpoints.md) | Persistent checkpoints that survive quitting to menu. Underpins [ESW](../skips/esw.md), [RESW](../skips/resw.md), [Layered ESW](../skips/esw-layered.md). |
+| [Mammoth Clip](mammoth-clip.md) | The DIM mammoth can partial-clip into walls. Underpins [Cog Skip](../skips/cog-skip.md) and [Bike Skip](../skips/bike-skip.md). |
+| [Void Travel](void-travel.md) | Mounted dismount lets Fox roam the void without softlocking. Underpins [K5E](../skips/k5e.md) and Any%. |
+| [Void Walking](void-walking.md) | <!-- TODO: pending writeup --> |
+| [Waterfall Jump](waterfall-jump.md) | Precise jump off the WC waterfall to land OOB. Underpins [REKE](../skips/reke.md), [ZGSS](../skips/zgss.md), [SGQL](../skips/sgql.md). |
 
 ## Adding a new glitch
 
-1. Copy [`out-of-bounds.md`](out-of-bounds.md) as a starting template.
-2. Rename it to the glitch's community name (lowercase, hyphens).
-3. Fill in the sections. The mandatory sections are **What it is**, **Setup**, and **Video**.
-4. Drop any screenshots into `images/` with a matching prefix.
-5. Link it from the list above and add it to `mkdocs.yml` `nav:`.
-6. Link to it from any [Skip](../skips/index.md) that uses it.
+1. New `.md` in this folder, lowercase-hyphen filename.
+2. Add to the table above and the `nav:` in `mkdocs.yml`.
+3. From every [Skip](../skips/index.md) that uses it, link back to this page in the **Glitch used** field at the top.

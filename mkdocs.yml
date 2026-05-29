@@ -12,6 +12,8 @@ copyright: Content licensed CC BY-SA 4.0 &mdash; site code MIT
 theme:
   name: material
   language: en
+  logo: Star_Fox_Adventures.png
+  favicon: Star_Fox_Adventures.png
   features:
     - navigation.instant       # SPA-style page loads; keeps search index warm
     - navigation.tracking      # URL updates as you scroll through anchors
@@ -101,34 +103,109 @@ nav:
 
   # ---- Intro / Beginner ----
   - Intro: intro/index.md
-  - General Info: general-info/index.md
+  - General Info:
+      - Overview: general-info/index.md
+      - Emulator Settings: general-info/emulator-settings.md
+      - Terminology: general-info/terminology.md
+      - Routing Dependencies: general-info/routing-dependencies.md
+      - Versions: general-info/versions.md
+      - Fuel Cells: general-info/fuel-cells.md
+      - Chapter Select: general-info/chapter-select.md
   - Categories:
       - Overview: categories/index.md
       - Any%: categories/any-percent.md
-      - 100%: categories/hundred-percent.md
+      - Any% No K5E: categories/any-percent-no-k5e.md
+      - Single File: categories/single-file.md
       - Glitchless: categories/glitchless.md
+      - 100%: categories/hundred-percent.md
+      - New Game+: categories/new-game-plus.md
+      - Spellstones: categories/spellstones.md
 
   # ---- Core reference ----
   - Tech:
       - Overview: tech/index.md
-      # TODO: add one entry per tech file as they are written
+      - Neutral Rolls / Ladder Skips: tech/neutral-rolls.md
+      - Running vs Rolling: tech/running-vs-rolling.md
+      - Flight Lag: tech/flight-lag.md
   - Glitches:
       - Overview: glitches/index.md
-      - "Out of Bounds (template)": glitches/out-of-bounds.md
-      # TODO: add one entry per glitch
+      - Air Swim: glitches/air-swim.md
+      - Ball Entanglement: glitches/ball-entanglement.md
+      - Bike Flag Glitch: glitches/bike-flag-glitch.md
+      - Camera Lock: glitches/camera-lock.md
+      - Damage Clip: glitches/damage-clip.md
+      - ESW Checkpoints: glitches/esw-checkpoints.md
+      - Mammoth Clip: glitches/mammoth-clip.md
+      - Void Travel: glitches/void-travel.md
+      - Void Walking: glitches/void-walking.md
+      - Waterfall Jump: glitches/waterfall-jump.md
   - Skips:
       - Overview: skips/index.md
-      - "Example Skip (template)": skips/example-skip.md
-      # TODO: add one entry per skip
+      - Air Swim family:
+          - CCE OOB: skips/cce-oob.md
+          - CCE: skips/cce.md
+          - GBS: skips/gbs.md
+          - K3E: skips/k3e.md
+          - BLFS: skips/blfs.md
+          - DIME: skips/dime.md
+          - Reverse Swim DIME: skips/dime-reverse-swim.md
+          - K4E: skips/k4e.md
+          - CC3 Airswim: skips/cc3-airswim.md
+      - ESW family:
+          - ESW: skips/esw.md
+          - RESW: skips/resw.md
+          - Layered ESW: skips/esw-layered.md
+      - Camera Lock family:
+          - Beacon Skip: skips/beacon-skip.md
+          - QE Cam Lock: skips/qe-cam-lock.md
+          - GQE: skips/gqe.md
+          - OFP Cam Lock: skips/ofp-cam-lock.md
+      - DIM family:
+          - Gate Despawn: skips/gate-despawn.md
+          - Cog Skip: skips/cog-skip.md
+          - Bike Skip: skips/bike-skip.md
+          - Seam Walk: skips/seam-walk.md
+          - Shield Hover: skips/shield-hover.md
+      - WC family:
+          - REKE: skips/reke.md
+          - ZGSS: skips/zgss.md
+          - SGQL: skips/sgql.md
+      - Ball Entanglement family:
+          - FGL: skips/fgl.md
+          - Ball Hover: skips/ball-hover.md
+      - DR family:
+          - DR Barrel Clip: skips/dr-barrel-clip.md
+          - DR Barrel Launch: skips/dr-barrel-launch.md
+      - Any% specific:
+          - Damage Clip: skips/damage-clip.md
+          - Seam Drop: skips/seam-drop.md
+          - K5E: skips/k5e.md
+          - WC Escape: skips/wc-escape.md
+      - LFV specific:
+          - Early Cheat Token: skips/early-cheat-token.md
+      - Other:
+          - BCRS: skips/bcrs.md
+          - Block Puzzle Clip: skips/block-puzzle-clip.md
+          - Electric Slide: skips/electric-slide.md
+          - Window Jump: skips/window-jump.md
   - Locations:
       - Overview: locations/index.md
-      - "Overworld (template)": locations/overworld.md
-      # TODO: add one entry per location
+      # TODO: per-area location pages can be added here as they are written.
 
   # ---- Bonus ----
-  - Tools: tools/index.md
+  - Tools:
+      - Overview: tools/index.md
+      - 3D Map View: tools/3d-map-view.md
+      - Any% Practice Tool: tools/any-practice-tool.md
+      - Shield Hover Setup Finder: tools/shield-hover-setup-finder.md
+      - Trigger Viewer: tools/trigger-viewer.md
+      - Any% Heap Visualiser: tools/any-heap-visualiser.md
+      - Heap Mapper: tools/heap-mapper.md
   - Glitch Hunting: glitch-hunting/index.md
-  - Cool Stuff: cool-stuff/index.md
+  - Cool Stuff:
+      - Overview: cool-stuff/index.md
+      - WR History: cool-stuff/wr-history.md
+      - TAS Runs: cool-stuff/tas-runs.md
 
   # ---- Meta ----
   - Tags: tags.md
